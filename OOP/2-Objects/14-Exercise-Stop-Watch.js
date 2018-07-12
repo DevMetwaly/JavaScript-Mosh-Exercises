@@ -10,7 +10,7 @@ function Stopwatch(){
     this.stop = function(){
         if(!working) throw new Error("Stopwatch is not wroking");
         working = false;
-        duration = (Date.now() - startTime)/1000;
+        duration += (Date.now() - startTime)/1000;
     };
 
     this.reset = function(){
